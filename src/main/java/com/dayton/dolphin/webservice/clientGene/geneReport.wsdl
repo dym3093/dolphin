@@ -1,0 +1,1529 @@
+<?xml version="1.0" ?><wsdl:definitions name="YmGeneReportServiceImplService" targetNamespace="http://service.webservice.hpin.org/" xmlns:ns1="http://cxf.apache.org/bindings/xformat" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://service.webservice.hpin.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.webservice.hpin.org/" xmlns:tns="http://service.webservice.hpin.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="pushSampleInfo" type="tns:pushSampleInfo"></xsd:element>
+  <xsd:complexType name="pushSampleInfo">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushSampleInfoResponse" type="tns:pushSampleInfoResponse"></xsd:element>
+  <xsd:complexType name="pushSampleInfoResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="updateGeneOrderInfo" type="tns:updateGeneOrderInfo"></xsd:element>
+  <xsd:complexType name="updateGeneOrderInfo">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="updateGeneOrderInfoResponse" type="tns:updateGeneOrderInfoResponse"></xsd:element>
+  <xsd:complexType name="updateGeneOrderInfoResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="findTestees" type="tns:findTestees"></xsd:element>
+  <xsd:complexType name="findTestees">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="findTesteesResponse" type="tns:findTesteesResponse"></xsd:element>
+  <xsd:complexType name="findTesteesResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="gainReportInfoDetail" type="tns:gainReportInfoDetail"></xsd:element>
+  <xsd:complexType name="gainReportInfoDetail">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="gainReportInfoDetailResponse" type="tns:gainReportInfoDetailResponse"></xsd:element>
+  <xsd:complexType name="gainReportInfoDetailResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCustomerInfo" type="tns:pushCustomerInfo"></xsd:element>
+  <xsd:complexType name="pushCustomerInfo">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCustomerInfoResponse" type="tns:pushCustomerInfoResponse"></xsd:element>
+  <xsd:complexType name="pushCustomerInfoResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushEventCustomerInfo" type="tns:pushEventCustomerInfo"></xsd:element>
+  <xsd:complexType name="pushEventCustomerInfo">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushEventCustomerInfoResponse" type="tns:pushEventCustomerInfoResponse"></xsd:element>
+  <xsd:complexType name="pushEventCustomerInfoResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="setEventQRCodeInvalid" type="tns:setEventQRCodeInvalid"></xsd:element>
+  <xsd:complexType name="setEventQRCodeInvalid">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="setEventQRCodeInvalidResponse" type="tns:setEventQRCodeInvalidResponse"></xsd:element>
+  <xsd:complexType name="setEventQRCodeInvalidResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="gainReportInfo" type="tns:gainReportInfo"></xsd:element>
+  <xsd:complexType name="gainReportInfo">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="gainReportInfoResponse" type="tns:gainReportInfoResponse"></xsd:element>
+  <xsd:complexType name="gainReportInfoResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getCrmBaseInfoByProCode" type="tns:getCrmBaseInfoByProCode"></xsd:element>
+  <xsd:complexType name="getCrmBaseInfoByProCode">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getCrmBaseInfoByProCodeResponse" type="tns:getCrmBaseInfoByProCodeResponse"></xsd:element>
+  <xsd:complexType name="getCrmBaseInfoByProCodeResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getCustomerAuth" type="tns:getCustomerAuth"></xsd:element>
+  <xsd:complexType name="getCustomerAuth">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getCustomerAuthResponse" type="tns:getCustomerAuthResponse"></xsd:element>
+  <xsd:complexType name="getCustomerAuthResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushErpOrder" type="tns:pushErpOrder"></xsd:element>
+  <xsd:complexType name="pushErpOrder">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushErpOrderResponse" type="tns:pushErpOrderResponse"></xsd:element>
+  <xsd:complexType name="pushErpOrderResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCustomerInfoHK" type="tns:pushCustomerInfoHK"></xsd:element>
+  <xsd:complexType name="pushCustomerInfoHK">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCustomerInfoHKResponse" type="tns:pushCustomerInfoHKResponse"></xsd:element>
+  <xsd:complexType name="pushCustomerInfoHKResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="verifyMemberInfo" type="tns:verifyMemberInfo"></xsd:element>
+  <xsd:complexType name="verifyMemberInfo">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="verifyMemberInfoResponse" type="tns:verifyMemberInfoResponse"></xsd:element>
+  <xsd:complexType name="verifyMemberInfoResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="receiveExamined" type="tns:receiveExamined"></xsd:element>
+  <xsd:complexType name="receiveExamined">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="receiveExaminedResponse" type="tns:receiveExaminedResponse"></xsd:element>
+  <xsd:complexType name="receiveExaminedResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getGeneReportInfoImg" type="tns:getGeneReportInfoImg"></xsd:element>
+  <xsd:complexType name="getGeneReportInfoImg">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+      <xsd:element minOccurs="0" name="arg1" type="xsd:string"></xsd:element>
+      <xsd:element minOccurs="0" name="arg2" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getGeneReportInfoImgResponse" type="tns:getGeneReportInfoImgResponse"></xsd:element>
+  <xsd:complexType name="getGeneReportInfoImgResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCustomerGenerCode" type="tns:pushCustomerGenerCode"></xsd:element>
+  <xsd:complexType name="pushCustomerGenerCode">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCustomerGenerCodeResponse" type="tns:pushCustomerGenerCodeResponse"></xsd:element>
+  <xsd:complexType name="pushCustomerGenerCodeResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getGeneReportInfoMyMutil" type="tns:getGeneReportInfoMyMutil"></xsd:element>
+  <xsd:complexType name="getGeneReportInfoMyMutil">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+      <xsd:element minOccurs="0" name="arg1" type="xsd:string"></xsd:element>
+      <xsd:element minOccurs="0" name="arg2" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getGeneReportInfoMyMutilResponse" type="tns:getGeneReportInfoMyMutilResponse"></xsd:element>
+  <xsd:complexType name="getGeneReportInfoMyMutilResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushEventQRCodeInfo" type="tns:pushEventQRCodeInfo"></xsd:element>
+  <xsd:complexType name="pushEventQRCodeInfo">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushEventQRCodeInfoResponse" type="tns:pushEventQRCodeInfoResponse"></xsd:element>
+  <xsd:complexType name="pushEventQRCodeInfoResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushGeneComboInfo" type="tns:pushGeneComboInfo"></xsd:element>
+  <xsd:complexType name="pushGeneComboInfo">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushGeneComboInfoResponse" type="tns:pushGeneComboInfoResponse"></xsd:element>
+  <xsd:complexType name="pushGeneComboInfoResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getBlyReportInfoImg" type="tns:getBlyReportInfoImg"></xsd:element>
+  <xsd:complexType name="getBlyReportInfoImg">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+      <xsd:element minOccurs="0" name="arg1" type="xsd:string"></xsd:element>
+      <xsd:element minOccurs="0" name="arg2" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getBlyReportInfoImgResponse" type="tns:getBlyReportInfoImgResponse"></xsd:element>
+  <xsd:complexType name="getBlyReportInfoImgResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getIDAuth" type="tns:getIDAuth"></xsd:element>
+  <xsd:complexType name="getIDAuth">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getIDAuthResponse" type="tns:getIDAuthResponse"></xsd:element>
+  <xsd:complexType name="getIDAuthResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCustomerStatusXN" type="tns:pushCustomerStatusXN"></xsd:element>
+  <xsd:complexType name="pushCustomerStatusXN">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCustomerStatusXNResponse" type="tns:pushCustomerStatusXNResponse"></xsd:element>
+  <xsd:complexType name="pushCustomerStatusXNResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCustomerStatusTPWC" type="tns:pushCustomerStatusTPWC"></xsd:element>
+  <xsd:complexType name="pushCustomerStatusTPWC">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCustomerStatusTPWCResponse" type="tns:pushCustomerStatusTPWCResponse"></xsd:element>
+  <xsd:complexType name="pushCustomerStatusTPWCResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="gainReport" type="tns:gainReport"></xsd:element>
+  <xsd:complexType name="gainReport">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="gainReportResponse" type="tns:gainReportResponse"></xsd:element>
+  <xsd:complexType name="gainReportResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushGeneGroupOrderInfo" type="tns:pushGeneGroupOrderInfo"></xsd:element>
+  <xsd:complexType name="pushGeneGroupOrderInfo">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushGeneGroupOrderInfoResponse" type="tns:pushGeneGroupOrderInfoResponse"></xsd:element>
+  <xsd:complexType name="pushGeneGroupOrderInfoResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCustomerStatus" type="tns:pushCustomerStatus"></xsd:element>
+  <xsd:complexType name="pushCustomerStatus">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCustomerStatusResponse" type="tns:pushCustomerStatusResponse"></xsd:element>
+  <xsd:complexType name="pushCustomerStatusResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getGeneReportInfo" type="tns:getGeneReportInfo"></xsd:element>
+  <xsd:complexType name="getGeneReportInfo">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+      <xsd:element minOccurs="0" name="arg1" type="xsd:string"></xsd:element>
+      <xsd:element minOccurs="0" name="arg2" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getGeneReportInfoResponse" type="tns:getGeneReportInfoResponse"></xsd:element>
+  <xsd:complexType name="getGeneReportInfoResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getComboInfo" type="tns:getComboInfo"></xsd:element>
+  <xsd:complexType name="getComboInfo">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getComboInfoResponse" type="tns:getComboInfoResponse"></xsd:element>
+  <xsd:complexType name="getComboInfoResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushPdfInfo" type="tns:pushPdfInfo"></xsd:element>
+  <xsd:complexType name="pushPdfInfo">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushPdfInfoResponse" type="tns:pushPdfInfoResponse"></xsd:element>
+  <xsd:complexType name="pushPdfInfoResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="gainReportDetail" type="tns:gainReportDetail"></xsd:element>
+  <xsd:complexType name="gainReportDetail">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="gainReportDetailResponse" type="tns:gainReportDetailResponse"></xsd:element>
+  <xsd:complexType name="gainReportDetailResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushGeneOrderInfo" type="tns:pushGeneOrderInfo"></xsd:element>
+  <xsd:complexType name="pushGeneOrderInfo">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushGeneOrderInfoResponse" type="tns:pushGeneOrderInfoResponse"></xsd:element>
+  <xsd:complexType name="pushGeneOrderInfoResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="createGroupOrder" type="tns:createGroupOrder"></xsd:element>
+  <xsd:complexType name="createGroupOrder">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="createGroupOrderResponse" type="tns:createGroupOrderResponse"></xsd:element>
+  <xsd:complexType name="createGroupOrderResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getEventQRCodeInfo" type="tns:getEventQRCodeInfo"></xsd:element>
+  <xsd:complexType name="getEventQRCodeInfo">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getEventQRCodeInfoResponse" type="tns:getEventQRCodeInfoResponse"></xsd:element>
+  <xsd:complexType name="getEventQRCodeInfoResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getCustAuth" type="tns:getCustAuth"></xsd:element>
+  <xsd:complexType name="getCustAuth">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getCustAuthResponse" type="tns:getCustAuthResponse"></xsd:element>
+  <xsd:complexType name="getCustAuthResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="productMemberImmediate" type="tns:productMemberImmediate"></xsd:element>
+  <xsd:complexType name="productMemberImmediate">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="productMemberImmediateResponse" type="tns:productMemberImmediateResponse"></xsd:element>
+  <xsd:complexType name="productMemberImmediateResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCustomerGCByCompanyTaiPing" type="tns:pushCustomerGCByCompanyTaiPing"></xsd:element>
+  <xsd:complexType name="pushCustomerGCByCompanyTaiPing">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCustomerGCByCompanyTaiPingResponse" type="tns:pushCustomerGCByCompanyTaiPingResponse"></xsd:element>
+  <xsd:complexType name="pushCustomerGCByCompanyTaiPingResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="validateQRCode" type="tns:validateQRCode"></xsd:element>
+  <xsd:complexType name="validateQRCode">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="validateQRCodeResponse" type="tns:validateQRCodeResponse"></xsd:element>
+  <xsd:complexType name="validateQRCodeResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushGeneReportInfo" type="tns:pushGeneReportInfo"></xsd:element>
+  <xsd:complexType name="pushGeneReportInfo">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushGeneReportInfoResponse" type="tns:pushGeneReportInfoResponse"></xsd:element>
+  <xsd:complexType name="pushGeneReportInfoResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCompanyQRCodeInfoWuChuang" type="tns:pushCompanyQRCodeInfoWuChuang"></xsd:element>
+  <xsd:complexType name="pushCompanyQRCodeInfoWuChuang">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCompanyQRCodeInfoWuChuangResponse" type="tns:pushCompanyQRCodeInfoWuChuangResponse"></xsd:element>
+  <xsd:complexType name="pushCompanyQRCodeInfoWuChuangResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="verifySalesMan" type="tns:verifySalesMan"></xsd:element>
+  <xsd:complexType name="verifySalesMan">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="verifySalesManResponse" type="tns:verifySalesManResponse"></xsd:element>
+  <xsd:complexType name="verifySalesManResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="findTestessAll" type="tns:findTestessAll"></xsd:element>
+  <xsd:complexType name="findTestessAll">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="findTestessAllResponse" type="tns:findTestessAllResponse"></xsd:element>
+  <xsd:complexType name="findTestessAllResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="verifyMemberPhone" type="tns:verifyMemberPhone"></xsd:element>
+  <xsd:complexType name="verifyMemberPhone">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="verifyMemberPhoneResponse" type="tns:verifyMemberPhoneResponse"></xsd:element>
+  <xsd:complexType name="verifyMemberPhoneResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCustomerGCByCompany" type="tns:pushCustomerGCByCompany"></xsd:element>
+  <xsd:complexType name="pushCustomerGCByCompany">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="pushCustomerGCByCompanyResponse" type="tns:pushCustomerGCByCompanyResponse"></xsd:element>
+  <xsd:complexType name="pushCustomerGCByCompanyResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="pushSampleInfo">
+    <wsdl:part element="tns:pushSampleInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="verifySalesManResponse">
+    <wsdl:part element="tns:verifySalesManResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateGeneOrderInfo">
+    <wsdl:part element="tns:updateGeneOrderInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGeneReportInfoImgResponse">
+    <wsdl:part element="tns:getGeneReportInfoImgResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setEventQRCodeInvalid">
+    <wsdl:part element="tns:setEventQRCodeInvalid" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCrmBaseInfoByProCode">
+    <wsdl:part element="tns:getCrmBaseInfoByProCode" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCustomerInfoHK">
+    <wsdl:part element="tns:pushCustomerInfoHK" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="verifyMemberInfo">
+    <wsdl:part element="tns:verifyMemberInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="receiveExamined">
+    <wsdl:part element="tns:receiveExamined" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCustomerStatusXNResponse">
+    <wsdl:part element="tns:pushCustomerStatusXNResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBlyReportInfoImgResponse">
+    <wsdl:part element="tns:getBlyReportInfoImgResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGeneReportInfoMyMutil">
+    <wsdl:part element="tns:getGeneReportInfoMyMutil" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCustomerGCByCompanyTaiPingResponse">
+    <wsdl:part element="tns:pushCustomerGCByCompanyTaiPingResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="gainReportInfoResponse">
+    <wsdl:part element="tns:gainReportInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCustomerStatusXN">
+    <wsdl:part element="tns:pushCustomerStatusXN" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushSampleInfoResponse">
+    <wsdl:part element="tns:pushSampleInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="gainReportResponse">
+    <wsdl:part element="tns:gainReportResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushGeneReportInfoResponse">
+    <wsdl:part element="tns:pushGeneReportInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCustomerStatusTPWC">
+    <wsdl:part element="tns:pushCustomerStatusTPWC" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="findTesteesResponse">
+    <wsdl:part element="tns:findTesteesResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="gainReport">
+    <wsdl:part element="tns:gainReport" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCompanyQRCodeInfoWuChuangResponse">
+    <wsdl:part element="tns:pushCompanyQRCodeInfoWuChuangResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCrmBaseInfoByProCodeResponse">
+    <wsdl:part element="tns:getCrmBaseInfoByProCodeResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="receiveExaminedResponse">
+    <wsdl:part element="tns:receiveExaminedResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushErpOrderResponse">
+    <wsdl:part element="tns:pushErpOrderResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushGeneComboInfoResponse">
+    <wsdl:part element="tns:pushGeneComboInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGeneReportInfo">
+    <wsdl:part element="tns:getGeneReportInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGeneReportInfoMyMutilResponse">
+    <wsdl:part element="tns:getGeneReportInfoMyMutilResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCustomerStatusTPWCResponse">
+    <wsdl:part element="tns:pushCustomerStatusTPWCResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushPdfInfo">
+    <wsdl:part element="tns:pushPdfInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="verifyMemberPhoneResponse">
+    <wsdl:part element="tns:verifyMemberPhoneResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushGeneOrderInfo">
+    <wsdl:part element="tns:pushGeneOrderInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="createGroupOrder">
+    <wsdl:part element="tns:createGroupOrder" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getEventQRCodeInfo">
+    <wsdl:part element="tns:getEventQRCodeInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCustAuth">
+    <wsdl:part element="tns:getCustAuth" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCustomerGCByCompanyTaiPing">
+    <wsdl:part element="tns:pushCustomerGCByCompanyTaiPing" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="validateQRCodeResponse">
+    <wsdl:part element="tns:validateQRCodeResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCustomerAuthResponse">
+    <wsdl:part element="tns:getCustomerAuthResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="findTestessAllResponse">
+    <wsdl:part element="tns:findTestessAllResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="verifyMemberInfoResponse">
+    <wsdl:part element="tns:verifyMemberInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushGeneReportInfo">
+    <wsdl:part element="tns:pushGeneReportInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="verifySalesMan">
+    <wsdl:part element="tns:verifySalesMan" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="gainReportInfoDetailResponse">
+    <wsdl:part element="tns:gainReportInfoDetailResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCustomerInfoResponse">
+    <wsdl:part element="tns:pushCustomerInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="verifyMemberPhone">
+    <wsdl:part element="tns:verifyMemberPhone" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCustomerGCByCompany">
+    <wsdl:part element="tns:pushCustomerGCByCompany" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="findTestees">
+    <wsdl:part element="tns:findTestees" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="gainReportInfoDetail">
+    <wsdl:part element="tns:gainReportInfoDetail" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCustomerInfo">
+    <wsdl:part element="tns:pushCustomerInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushEventCustomerInfo">
+    <wsdl:part element="tns:pushEventCustomerInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushGeneGroupOrderInfoResponse">
+    <wsdl:part element="tns:pushGeneGroupOrderInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="gainReportInfo">
+    <wsdl:part element="tns:gainReportInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCustomerAuth">
+    <wsdl:part element="tns:getCustomerAuth" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushErpOrder">
+    <wsdl:part element="tns:pushErpOrder" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="createGroupOrderResponse">
+    <wsdl:part element="tns:createGroupOrderResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGeneReportInfoImg">
+    <wsdl:part element="tns:getGeneReportInfoImg" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCustomerGenerCode">
+    <wsdl:part element="tns:pushCustomerGenerCode" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushEventQRCodeInfo">
+    <wsdl:part element="tns:pushEventQRCodeInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushGeneComboInfo">
+    <wsdl:part element="tns:pushGeneComboInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBlyReportInfoImg">
+    <wsdl:part element="tns:getBlyReportInfoImg" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="gainReportDetailResponse">
+    <wsdl:part element="tns:gainReportDetailResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setEventQRCodeInvalidResponse">
+    <wsdl:part element="tns:setEventQRCodeInvalidResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getIDAuth">
+    <wsdl:part element="tns:getIDAuth" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateGeneOrderInfoResponse">
+    <wsdl:part element="tns:updateGeneOrderInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushEventQRCodeInfoResponse">
+    <wsdl:part element="tns:pushEventQRCodeInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushGeneGroupOrderInfo">
+    <wsdl:part element="tns:pushGeneGroupOrderInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCustomerInfoHKResponse">
+    <wsdl:part element="tns:pushCustomerInfoHKResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCustomerStatus">
+    <wsdl:part element="tns:pushCustomerStatus" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getComboInfo">
+    <wsdl:part element="tns:getComboInfo" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="gainReportDetail">
+    <wsdl:part element="tns:gainReportDetail" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCustomerStatusResponse">
+    <wsdl:part element="tns:pushCustomerStatusResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushGeneOrderInfoResponse">
+    <wsdl:part element="tns:pushGeneOrderInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGeneReportInfoResponse">
+    <wsdl:part element="tns:getGeneReportInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="productMemberImmediate">
+    <wsdl:part element="tns:productMemberImmediate" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCustomerGCByCompanyResponse">
+    <wsdl:part element="tns:pushCustomerGCByCompanyResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getEventQRCodeInfoResponse">
+    <wsdl:part element="tns:getEventQRCodeInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getComboInfoResponse">
+    <wsdl:part element="tns:getComboInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="validateQRCode">
+    <wsdl:part element="tns:validateQRCode" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushEventCustomerInfoResponse">
+    <wsdl:part element="tns:pushEventCustomerInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCustAuthResponse">
+    <wsdl:part element="tns:getCustAuthResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="productMemberImmediateResponse">
+    <wsdl:part element="tns:productMemberImmediateResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCompanyQRCodeInfoWuChuang">
+    <wsdl:part element="tns:pushCompanyQRCodeInfoWuChuang" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getIDAuthResponse">
+    <wsdl:part element="tns:getIDAuthResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushPdfInfoResponse">
+    <wsdl:part element="tns:pushPdfInfoResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="findTestessAll">
+    <wsdl:part element="tns:findTestessAll" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pushCustomerGenerCodeResponse">
+    <wsdl:part element="tns:pushCustomerGenerCodeResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="YmGeneReportServiceImpl">
+    <wsdl:operation name="pushSampleInfo">
+      <wsdl:input message="tns:pushSampleInfo" name="pushSampleInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:pushSampleInfoResponse" name="pushSampleInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateGeneOrderInfo">
+      <wsdl:input message="tns:updateGeneOrderInfo" name="updateGeneOrderInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:updateGeneOrderInfoResponse" name="updateGeneOrderInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findTestees">
+      <wsdl:input message="tns:findTestees" name="findTestees">
+    </wsdl:input>
+      <wsdl:output message="tns:findTesteesResponse" name="findTesteesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gainReportInfoDetail">
+      <wsdl:input message="tns:gainReportInfoDetail" name="gainReportInfoDetail">
+    </wsdl:input>
+      <wsdl:output message="tns:gainReportInfoDetailResponse" name="gainReportInfoDetailResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCustomerInfo">
+      <wsdl:input message="tns:pushCustomerInfo" name="pushCustomerInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:pushCustomerInfoResponse" name="pushCustomerInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushEventCustomerInfo">
+      <wsdl:input message="tns:pushEventCustomerInfo" name="pushEventCustomerInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:pushEventCustomerInfoResponse" name="pushEventCustomerInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setEventQRCodeInvalid">
+      <wsdl:input message="tns:setEventQRCodeInvalid" name="setEventQRCodeInvalid">
+    </wsdl:input>
+      <wsdl:output message="tns:setEventQRCodeInvalidResponse" name="setEventQRCodeInvalidResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gainReportInfo">
+      <wsdl:input message="tns:gainReportInfo" name="gainReportInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:gainReportInfoResponse" name="gainReportInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCrmBaseInfoByProCode">
+      <wsdl:input message="tns:getCrmBaseInfoByProCode" name="getCrmBaseInfoByProCode">
+    </wsdl:input>
+      <wsdl:output message="tns:getCrmBaseInfoByProCodeResponse" name="getCrmBaseInfoByProCodeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerAuth">
+      <wsdl:input message="tns:getCustomerAuth" name="getCustomerAuth">
+    </wsdl:input>
+      <wsdl:output message="tns:getCustomerAuthResponse" name="getCustomerAuthResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushErpOrder">
+      <wsdl:input message="tns:pushErpOrder" name="pushErpOrder">
+    </wsdl:input>
+      <wsdl:output message="tns:pushErpOrderResponse" name="pushErpOrderResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCustomerInfoHK">
+      <wsdl:input message="tns:pushCustomerInfoHK" name="pushCustomerInfoHK">
+    </wsdl:input>
+      <wsdl:output message="tns:pushCustomerInfoHKResponse" name="pushCustomerInfoHKResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifyMemberInfo">
+      <wsdl:input message="tns:verifyMemberInfo" name="verifyMemberInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:verifyMemberInfoResponse" name="verifyMemberInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="receiveExamined">
+      <wsdl:input message="tns:receiveExamined" name="receiveExamined">
+    </wsdl:input>
+      <wsdl:output message="tns:receiveExaminedResponse" name="receiveExaminedResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGeneReportInfoImg">
+      <wsdl:input message="tns:getGeneReportInfoImg" name="getGeneReportInfoImg">
+    </wsdl:input>
+      <wsdl:output message="tns:getGeneReportInfoImgResponse" name="getGeneReportInfoImgResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCustomerGenerCode">
+      <wsdl:input message="tns:pushCustomerGenerCode" name="pushCustomerGenerCode">
+    </wsdl:input>
+      <wsdl:output message="tns:pushCustomerGenerCodeResponse" name="pushCustomerGenerCodeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGeneReportInfoMyMutil">
+      <wsdl:input message="tns:getGeneReportInfoMyMutil" name="getGeneReportInfoMyMutil">
+    </wsdl:input>
+      <wsdl:output message="tns:getGeneReportInfoMyMutilResponse" name="getGeneReportInfoMyMutilResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushEventQRCodeInfo">
+      <wsdl:input message="tns:pushEventQRCodeInfo" name="pushEventQRCodeInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:pushEventQRCodeInfoResponse" name="pushEventQRCodeInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushGeneComboInfo">
+      <wsdl:input message="tns:pushGeneComboInfo" name="pushGeneComboInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:pushGeneComboInfoResponse" name="pushGeneComboInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBlyReportInfoImg">
+      <wsdl:input message="tns:getBlyReportInfoImg" name="getBlyReportInfoImg">
+    </wsdl:input>
+      <wsdl:output message="tns:getBlyReportInfoImgResponse" name="getBlyReportInfoImgResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getIDAuth">
+      <wsdl:input message="tns:getIDAuth" name="getIDAuth">
+    </wsdl:input>
+      <wsdl:output message="tns:getIDAuthResponse" name="getIDAuthResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCustomerStatusXN">
+      <wsdl:input message="tns:pushCustomerStatusXN" name="pushCustomerStatusXN">
+    </wsdl:input>
+      <wsdl:output message="tns:pushCustomerStatusXNResponse" name="pushCustomerStatusXNResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCustomerStatusTPWC">
+      <wsdl:input message="tns:pushCustomerStatusTPWC" name="pushCustomerStatusTPWC">
+    </wsdl:input>
+      <wsdl:output message="tns:pushCustomerStatusTPWCResponse" name="pushCustomerStatusTPWCResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gainReport">
+      <wsdl:input message="tns:gainReport" name="gainReport">
+    </wsdl:input>
+      <wsdl:output message="tns:gainReportResponse" name="gainReportResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushGeneGroupOrderInfo">
+      <wsdl:input message="tns:pushGeneGroupOrderInfo" name="pushGeneGroupOrderInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:pushGeneGroupOrderInfoResponse" name="pushGeneGroupOrderInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCustomerStatus">
+      <wsdl:input message="tns:pushCustomerStatus" name="pushCustomerStatus">
+    </wsdl:input>
+      <wsdl:output message="tns:pushCustomerStatusResponse" name="pushCustomerStatusResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGeneReportInfo">
+      <wsdl:input message="tns:getGeneReportInfo" name="getGeneReportInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:getGeneReportInfoResponse" name="getGeneReportInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getComboInfo">
+      <wsdl:input message="tns:getComboInfo" name="getComboInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:getComboInfoResponse" name="getComboInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushPdfInfo">
+      <wsdl:input message="tns:pushPdfInfo" name="pushPdfInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:pushPdfInfoResponse" name="pushPdfInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gainReportDetail">
+      <wsdl:input message="tns:gainReportDetail" name="gainReportDetail">
+    </wsdl:input>
+      <wsdl:output message="tns:gainReportDetailResponse" name="gainReportDetailResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushGeneOrderInfo">
+      <wsdl:input message="tns:pushGeneOrderInfo" name="pushGeneOrderInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:pushGeneOrderInfoResponse" name="pushGeneOrderInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createGroupOrder">
+      <wsdl:input message="tns:createGroupOrder" name="createGroupOrder">
+    </wsdl:input>
+      <wsdl:output message="tns:createGroupOrderResponse" name="createGroupOrderResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEventQRCodeInfo">
+      <wsdl:input message="tns:getEventQRCodeInfo" name="getEventQRCodeInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:getEventQRCodeInfoResponse" name="getEventQRCodeInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustAuth">
+      <wsdl:input message="tns:getCustAuth" name="getCustAuth">
+    </wsdl:input>
+      <wsdl:output message="tns:getCustAuthResponse" name="getCustAuthResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="productMemberImmediate">
+      <wsdl:input message="tns:productMemberImmediate" name="productMemberImmediate">
+    </wsdl:input>
+      <wsdl:output message="tns:productMemberImmediateResponse" name="productMemberImmediateResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCustomerGCByCompanyTaiPing">
+      <wsdl:input message="tns:pushCustomerGCByCompanyTaiPing" name="pushCustomerGCByCompanyTaiPing">
+    </wsdl:input>
+      <wsdl:output message="tns:pushCustomerGCByCompanyTaiPingResponse" name="pushCustomerGCByCompanyTaiPingResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validateQRCode">
+      <wsdl:input message="tns:validateQRCode" name="validateQRCode">
+    </wsdl:input>
+      <wsdl:output message="tns:validateQRCodeResponse" name="validateQRCodeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushGeneReportInfo">
+      <wsdl:input message="tns:pushGeneReportInfo" name="pushGeneReportInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:pushGeneReportInfoResponse" name="pushGeneReportInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCompanyQRCodeInfoWuChuang">
+      <wsdl:input message="tns:pushCompanyQRCodeInfoWuChuang" name="pushCompanyQRCodeInfoWuChuang">
+    </wsdl:input>
+      <wsdl:output message="tns:pushCompanyQRCodeInfoWuChuangResponse" name="pushCompanyQRCodeInfoWuChuangResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifySalesMan">
+      <wsdl:input message="tns:verifySalesMan" name="verifySalesMan">
+    </wsdl:input>
+      <wsdl:output message="tns:verifySalesManResponse" name="verifySalesManResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findTestessAll">
+      <wsdl:input message="tns:findTestessAll" name="findTestessAll">
+    </wsdl:input>
+      <wsdl:output message="tns:findTestessAllResponse" name="findTestessAllResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifyMemberPhone">
+      <wsdl:input message="tns:verifyMemberPhone" name="verifyMemberPhone">
+    </wsdl:input>
+      <wsdl:output message="tns:verifyMemberPhoneResponse" name="verifyMemberPhoneResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCustomerGCByCompany">
+      <wsdl:input message="tns:pushCustomerGCByCompany" name="pushCustomerGCByCompany">
+    </wsdl:input>
+      <wsdl:output message="tns:pushCustomerGCByCompanyResponse" name="pushCustomerGCByCompanyResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="YmGeneReportServiceImplServiceSoapBinding" type="tns:YmGeneReportServiceImpl">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <wsdl:operation name="pushSampleInfo">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushSampleInfo">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushSampleInfoResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateGeneOrderInfo">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="updateGeneOrderInfo">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="updateGeneOrderInfoResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findTestees">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="findTestees">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="findTesteesResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gainReportInfoDetail">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="gainReportInfoDetail">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="gainReportInfoDetailResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCustomerInfo">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushCustomerInfo">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushCustomerInfoResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushEventCustomerInfo">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushEventCustomerInfo">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushEventCustomerInfoResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setEventQRCodeInvalid">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="setEventQRCodeInvalid">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="setEventQRCodeInvalidResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gainReportInfo">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="gainReportInfo">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="gainReportInfoResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCrmBaseInfoByProCode">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="getCrmBaseInfoByProCode">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="getCrmBaseInfoByProCodeResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerAuth">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="getCustomerAuth">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="getCustomerAuthResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushErpOrder">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushErpOrder">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushErpOrderResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCustomerInfoHK">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushCustomerInfoHK">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushCustomerInfoHKResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifyMemberInfo">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="verifyMemberInfo">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="verifyMemberInfoResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="receiveExamined">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="receiveExamined">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="receiveExaminedResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGeneReportInfoImg">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="getGeneReportInfoImg">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="getGeneReportInfoImgResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCustomerGenerCode">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushCustomerGenerCode">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushCustomerGenerCodeResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGeneReportInfoMyMutil">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="getGeneReportInfoMyMutil">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="getGeneReportInfoMyMutilResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushEventQRCodeInfo">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushEventQRCodeInfo">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushEventQRCodeInfoResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushGeneComboInfo">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushGeneComboInfo">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushGeneComboInfoResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBlyReportInfoImg">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="getBlyReportInfoImg">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="getBlyReportInfoImgResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getIDAuth">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="getIDAuth">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="getIDAuthResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCustomerStatusXN">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushCustomerStatusXN">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushCustomerStatusXNResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCustomerStatusTPWC">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushCustomerStatusTPWC">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushCustomerStatusTPWCResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gainReport">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="gainReport">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="gainReportResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushGeneGroupOrderInfo">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushGeneGroupOrderInfo">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushGeneGroupOrderInfoResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCustomerStatus">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushCustomerStatus">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushCustomerStatusResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGeneReportInfo">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="getGeneReportInfo">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="getGeneReportInfoResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getComboInfo">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="getComboInfo">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="getComboInfoResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushPdfInfo">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushPdfInfo">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushPdfInfoResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gainReportDetail">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="gainReportDetail">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="gainReportDetailResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushGeneOrderInfo">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushGeneOrderInfo">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushGeneOrderInfoResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createGroupOrder">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="createGroupOrder">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="createGroupOrderResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEventQRCodeInfo">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="getEventQRCodeInfo">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="getEventQRCodeInfoResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustAuth">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="getCustAuth">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="getCustAuthResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="productMemberImmediate">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="productMemberImmediate">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="productMemberImmediateResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCustomerGCByCompanyTaiPing">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushCustomerGCByCompanyTaiPing">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushCustomerGCByCompanyTaiPingResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validateQRCode">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="validateQRCode">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="validateQRCodeResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushGeneReportInfo">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushGeneReportInfo">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushGeneReportInfoResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCompanyQRCodeInfoWuChuang">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushCompanyQRCodeInfoWuChuang">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushCompanyQRCodeInfoWuChuangResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifySalesMan">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="verifySalesMan">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="verifySalesManResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findTestessAll">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="findTestessAll">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="findTestessAllResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifyMemberPhone">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="verifyMemberPhone">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="verifyMemberPhoneResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pushCustomerGCByCompany">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="pushCustomerGCByCompany">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="pushCustomerGCByCompanyResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="YmGeneReportServiceImplService">
+    <wsdl:port binding="tns:YmGeneReportServiceImplServiceSoapBinding" name="YmGeneReportServiceImplPort">
+      <soap:address location="http://localhost:7280/websGene/geneReport"></soap:address>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
