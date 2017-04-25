@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="dolphin:war exploded">
-    <output-path>$USER_HOME$/sofeware/tomcat7_03/webapps/dolphin</output-path>
+    <output-path>$PROJECT_DIR$/target/dolphin</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -37,7 +37,33 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.3.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.apache.activemq:activemq-all:5.14.4" />
+          <element id="library" level="project" name="Maven: org.redisson:redisson:3.3.0" />
+          <element id="library" level="project" name="Maven: io.netty:netty-common:4.1.8.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-codec:4.1.8.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-buffer:4.1.8.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-transport:4.1.8.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-resolver:4.1.8.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-handler:4.1.8.Final" />
+          <element id="library" level="project" name="Maven: javax.cache:cache-api:1.0.0" />
+          <element id="library" level="project" name="Maven: io.projectreactor:reactor-stream:2.0.8.RELEASE" />
+          <element id="library" level="project" name="Maven: io.projectreactor:reactor-core:2.0.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.reactivestreams:reactive-streams:1.0.0" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.21" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.7.6" />
+          <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.15" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.7.6" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.7.6" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.7.0" />
+          <element id="library" level="project" name="Maven: net.openhft:zero-allocation-hashing:0.5" />
+          <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.4.26" />
+          <element id="library" level="project" name="Maven: org.jodd:jodd-bean:3.7.1" />
+          <element id="library" level="project" name="Maven: org.jodd:jodd-core:3.7.1" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
         </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/dolphin/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="dolphin/web/Web" />
     </root>
