@@ -1,9 +1,9 @@
 package com.dayton.dolphin.threadCore.chap04;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 通过组合来实现线程安全
@@ -12,16 +12,81 @@ import java.util.ListIterator;
 public class ImprovedList<T> implements List<T>{
     private final List<T> bubble;
 
+    //重入锁
+    private final transient ReentrantLock lock = new ReentrantLock();
+
     public ImprovedList(List<T> bubble) {
         this.bubble = bubble;
     }
 
-    public synchronized boolean putIfAbsent(T x){
-        boolean contain = bubble.contains(x);
-        if (!contain){
-            bubble.add(x);
+    public static void main(String[] args){
+        ArrayList<String> list = new ArrayList<String>();
+        ConcurrentHashMap<String,String> safeMap = null;
+        CopyOnWriteArrayList<String> cowList =  null;
+    }
+
+    /**
+     * 如果元素不在线性表中则添加
+     * @param target 要添加的元素
+     * @return boolean
+     */
+    public boolean putIfAbsent(T target){
+        lock.lock();
+        try {
+            boolean contain = bubble.contains(target);
+            if (!contain) {
+                contain = bubble.add(target);
+            }
+            return contain;
+        } finally {
+            lock.unlock();
         }
-        return contain;
+    }
+
+    /**
+     * 获取最后一个元素
+     * @return T
+     */
+    public T getLast(){
+        synchronized (bubble){
+           if (bubble.isEmpty()){
+               throw new NullPointerException("Null List");
+           }
+           return bubble.get(bubble.size()-1);
+        }
+    }
+
+    /**
+     * 删除最后一个元素
+     * @return BOOLEAN
+     */
+    public boolean deleteLast(){
+        synchronized (bubble){
+            if (bubble.isEmpty()) {
+                throw new NullPointerException("Null List");
+            }
+            return deleteSafe(bubble.size() - 1);
+        }
+    }
+
+    /**
+     * 安全删除制定索引位置的元素
+     * @param index 索引位置
+     * @return boolean
+     */
+    public boolean deleteSafe(int index){
+        synchronized (bubble){
+            boolean flag = false;
+            if (bubble.isEmpty()) {
+                throw new NullPointerException("Null List");
+            }
+            if (index >= 0 && index <= bubble.size() - 1) {
+                if (bubble.remove(index) != null) {
+                    flag = true;
+                }
+            }
+            return flag;
+        }
     }
 
     @Override
