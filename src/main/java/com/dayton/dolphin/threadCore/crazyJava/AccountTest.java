@@ -11,12 +11,14 @@ package com.dayton.dolphin.threadCore.crazyJava;/**
 public class AccountTest {
 
     public static void main(String[] args){
+
         Account account = new Account("hl", 1000);
         DrawThread oneThread = new DrawThread("one", account, 700);
         DrawThread twoThread = new DrawThread("two", account, 800);
 
         oneThread.start();
         twoThread.start();
+        account.draw(600);
 
     }
 
