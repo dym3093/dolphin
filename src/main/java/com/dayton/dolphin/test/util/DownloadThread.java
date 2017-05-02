@@ -44,7 +44,7 @@ public class DownloadThread implements Callable<Map<String,String>> {
 
 	@Override
 	public Map<String, String> call() throws IOException {
-		Map<String,String> result = new HashMap<>();
+		Map<String,String> result = new HashMap<String,String>();
 		try {
 			result = downLoadFromUrl(url, fileName, savePath);
 			log.info("返回的filePath: "+result.get(fileName));
@@ -84,7 +84,7 @@ public class DownloadThread implements Callable<Map<String,String>> {
 		try {
 			url = new URL(urlStr);
 			scheme = url.toURI().getScheme();
-			result = new HashMap<>();
+			result = new HashMap<String, String>();
 
 			//HTTP链接
 			if("http".equalsIgnoreCase(scheme)){
@@ -119,7 +119,7 @@ public class DownloadThread implements Callable<Map<String,String>> {
 				msg = "无法下载，状态码["+code+"]， 会员条码["+fileName.substring(0, fileName.indexOf("."))+"],报告地址["+urlStr+"]";
 				log.info("无法下载，状态码["+code+"]， 会员条码["+fileName.substring(0, fileName.indexOf("."))+"],报告地址["+urlStr+"]");
 				logger.info("无法下载，状态码["+code+"]，  会员条码["+fileName.substring(0, fileName.indexOf("."))+"],报告地址["+urlStr+"]");
-				result = new HashMap<>();
+				result = new HashMap<String, String>();
 				result.put(HttpUtils.CODE, ""+code);
 			}
 

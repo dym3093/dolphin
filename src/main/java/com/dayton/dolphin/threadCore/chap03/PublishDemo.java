@@ -18,7 +18,7 @@ public class PublishDemo {
     public static Set<User> userSet;
 
     public void init(){
-        userSet = new HashSet<>();
+        userSet = new HashSet<User>();
     }
 
     public static void main(String[] args){

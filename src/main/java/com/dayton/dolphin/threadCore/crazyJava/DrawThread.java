@@ -21,17 +21,19 @@ public class DrawThread extends Thread{
     }
 
     public void run(){
-        if (drawAmount<=account.getBalance()){
-            System.out.println(this.currentThread().getName()+" 操作成功，"
-                    + "取出现金["+drawAmount+"]");
-            account.setBalance(account.getBalance()-this.getDrawAmount());
-            System.out.println(this.currentThread().getName()+" 操作取现后，" +
-                    "账号["+ account.getAccountNo() +"]," +
-                    "余额["+ account.getBalance() +"]");
-        }else{
-            System.out.println(this.currentThread().getName()
-                    + " 操作失败，取现金额["+this.getDrawAmount()+"]"
-                    + "大于账号余额[+"+this.getAccount().getBalance()+"]");
+        synchronized(account) {
+            if (drawAmount <= account.getBalance()) {
+                System.out.println(this.currentThread().getName() + " 操作成功，"
+                        + "取出现金[" + drawAmount + "]");
+                account.setBalance(account.getBalance() - this.getDrawAmount());
+                System.out.println(this.currentThread().getName() + " 操作取现后，" +
+                        "账号[" + account.getAccountNo() + "]," +
+                        "余额[" + account.getBalance() + "]");
+            } else {
+                System.out.println(this.currentThread().getName()
+                        + " 操作失败，取现金额[" + this.getDrawAmount() + "]"
+                        + "大于账号余额[+" + this.getAccount().getBalance() + "]");
+            }
         }
     }
 

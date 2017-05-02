@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
  **/
 public final class ImmutableStore {
 
-    private final Set<String> bagOfBlueFat = new HashSet<>();
+    private final Set<String> bagOfBlueFat = new HashSet<String>();
 
     public static void main(String[] args){
         ImmutableStore store = new ImmutableStore();
@@ -38,7 +38,7 @@ public final class ImmutableStore {
     }
 
     public synchronized Set<String> getBagOfBlueFat() {
-        return new HashSet<>(bagOfBlueFat);
+        return new HashSet<String>(bagOfBlueFat);
     }
 
 }
