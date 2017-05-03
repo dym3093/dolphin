@@ -21,7 +21,7 @@ public class DrawThread extends Thread{
     }
 
     public void run(){
-        synchronized(account) {
+        for (int i=0; i<100; i++) {
             account.draw(getDrawAmount());
         }
     }

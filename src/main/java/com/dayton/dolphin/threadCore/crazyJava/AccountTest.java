@@ -1,4 +1,5 @@
-package com.dayton.dolphin.threadCore.crazyJava;/**
+package com.dayton.dolphin.threadCore.crazyJava;
+/**
  * Created by daimian on 17-5-2.
  */
 
@@ -12,13 +13,15 @@ public class AccountTest {
 
     public static void main(String[] args){
 
-        Account account = new Account("hl", 1000);
-        DrawThread oneThread = new DrawThread("one", account, 700);
-        DrawThread twoThread = new DrawThread("two", account, 800);
+        Account account = new Account("hl", 0);
+        new DrawThread("日常花销", account, 700).start();
 
-        oneThread.start();
-        twoThread.start();
-        account.draw(600);
+        new DepositThread("支付宝日收入", account, 1000).start();
+        new DepositThread("理财日收入", account, 3000).start();
+        new DepositThread("工资日收入", account, 3000).start();
+
+        new DrawThread("慈善捐助", account, 1000).start();
+
 
     }
 

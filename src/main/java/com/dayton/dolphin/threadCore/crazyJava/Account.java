@@ -1,7 +1,9 @@
-package com.dayton.dolphin.threadCore.crazyJava;/**
+package com.dayton.dolphin.threadCore.crazyJava;
+/**
  * Created by daimian on 17-5-1.
  */
 
+import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
@@ -12,12 +14,16 @@ import java.util.concurrent.locks.ReentrantLock;
  **/
 public class Account {
 
+    //可重入锁
+    private final ReentrantLock lock = new ReentrantLock();
+    //获得制定Lock对象对应的Condition
+    private final Condition condition = lock.newCondition();
     //账号
     private String accountNo;
     //余额
     private double balance;
-    //可重入锁
-    private final ReentrantLock lock = new ReentrantLock();
+    //是否有存款
+    private boolean flag = false;
 
     public Account(String accountNo, double balance){
         this.accountNo = accountNo;
@@ -34,18 +40,53 @@ public class Account {
         boolean isDraw = false;
         try {
             lock.lock();
-            if (drawAmount <= getBalance() && drawAmount >= 0) {
-                System.out.println(" 操作成功! 从账号[" + getAccountNo() + "]中取出现金[" + drawAmount + "]");
-                setBalance(balance - drawAmount);
-                System.out.println(" 操作取现后，账号[" + getAccountNo() + "]," + "余额[" + getBalance() + "]");
-                isDraw = true;
-            } else {
-                System.out.println("操作失败，取现金额[" + drawAmount + "]大于账号[" + getAccountNo() + "]中的余额[" + getBalance() + "]");
+            if (!flag){
+                condition.await();
+            }else {
+                if (drawAmount <= getBalance() && drawAmount >= 0) {
+                    System.out.println(" 操作成功! 从账号[" + getAccountNo() + "]中取出现金[" + drawAmount + "]");
+                    setBalance(balance - drawAmount);
+                    System.out.println(" 操作取现后，账号[" + getAccountNo() + "]," + "余额[" + getBalance() + "]");
+                    isDraw = true;//取款成功
+                } else {
+                    System.out.println("操作失败，取现金额[" + drawAmount + "]大于账号[" + getAccountNo() + "]中的余额[" + getBalance() + "]");
+                }
+                flag = false;//操作完成后可以进行存款
+                condition.signalAll();//唤醒其他线程
             }
-        }finally {
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
             lock.unlock();
         }
         return isDraw;
+    }
+
+    /**
+     * 存款
+     * @param depositAmount
+     * @return boolean
+     */
+    public boolean deposit(double depositAmount){
+        try {
+            lock.lock();
+            if (flag){
+                condition.await();
+            } else {
+                if (depositAmount > 0) {
+                    System.out.println("执行存款操作! 往账号[" + getAccountNo() + "]中存入金额[" + depositAmount + "]");
+                    setBalance(getBalance() + depositAmount);
+                    System.out.println("存款成功! 账号[" + getAccountNo() + "]现有余额[" + getBalance() + "]");
+                }
+                flag = true;
+                condition.signalAll();
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            lock.unlock();
+        }
+        return flag;
     }
 
     public String getAccountNo() {
@@ -84,4 +125,11 @@ public class Account {
         return target.accountNo.equals(this.getAccountNo())&&target.balance==this.getBalance();
     }
 
+    public boolean isFlag() {
+        return flag;
+    }
+
+    public void setFlag(boolean flag) {
+        this.flag = flag;
+    }
 }
