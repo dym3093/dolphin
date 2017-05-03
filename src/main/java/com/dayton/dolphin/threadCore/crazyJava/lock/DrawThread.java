@@ -1,4 +1,4 @@
-package com.dayton.dolphin.threadCore.crazyJava;/**
+package com.dayton.dolphin.threadCore.crazyJava.lock;/**
  * Created by daimian on 17-5-1.
  */
 
