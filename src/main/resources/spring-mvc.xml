@@ -18,7 +18,6 @@
 
     <!--启用注解-->
     <mvc:annotation-driven/>
-
     <!--制定扫描包路径-->
     <context:component-scan base-package="com.dayton.dolphin">
         <!--<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
@@ -31,7 +30,7 @@
         <!--文件类型（后缀）-->
         <property name="suffix" value=".jsp"/>
         <!--顺序-->
-        <property name="order" value="1"/>
+        <!--<property name="order" value="1"/>-->
     </bean>
 
 </beans>
