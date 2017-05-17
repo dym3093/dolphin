@@ -17,10 +17,12 @@
                             http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
 
     <!--启用注解-->
-    <mvc:annotation-driven/>
-    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
-
+    <context:annotation-config/>
     <!--制定扫描包路径-->
     <context:component-scan base-package="com.dayton.dolphin"/>
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+
+    <import resource="spring-mvc.xml"/>
+    <import resource="applicationContext-ActiveMQ.xml"/>
 
 </beans>

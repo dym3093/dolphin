@@ -20,7 +20,7 @@ import javax.jms.TextMessage;
 @Service
 public class ConsumerService {
 
-    @Autowired
+    @Resource(name = "jmsTemplate")
     private JmsTemplate jmsTemplate;
 
     public TextMessage receive(Destination destination){

@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="dolphin:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="dolphin.war">
-      <element id="artifact" artifact-name="dolphin:war exploded" />
-    </root>
-  </artifact>
-</component>
