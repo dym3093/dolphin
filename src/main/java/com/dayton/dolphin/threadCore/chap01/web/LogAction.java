@@ -4,6 +4,7 @@ package com.dayton.dolphin.threadCore.chap01.web;/**
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
@@ -16,7 +17,9 @@ import org.springframework.web.servlet.ModelAndView;
 public class LogAction {
 
     @RequestMapping("/show")
+    @ResponseBody
     public void show(){
-       ModelAndView mav = new ModelAndView("Hello");
+        System.out.println("show");
+        ModelAndView mav = new ModelAndView("Hello");
     }
 }

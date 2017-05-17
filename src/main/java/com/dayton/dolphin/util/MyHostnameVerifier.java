@@ -2,7 +2,7 @@
  * @author DengYouming
  * @since 2016-10-13 下午6:51:22
  */
-package com.dayton.dolphin.test.util;
+package com.dayton.dolphin.util;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLSession;

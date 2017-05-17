@@ -1,15 +1,13 @@
-package com.dayton.dolphin.test.util;
+package com.dayton.dolphin.util;
 
 /**
  * Created by daimian on 17-4-12.
  */
 
 import org.apache.http.HttpEntity;
-import org.apache.http.client.entity.EntityBuilder;
 import org.apache.http.entity.*;
 import org.apache.log4j.Logger;
 
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 

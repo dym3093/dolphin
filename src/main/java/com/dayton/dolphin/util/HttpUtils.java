@@ -2,7 +2,7 @@
  * @author Damian
  * @since 2016-7-22 下午5:04:46
  */
-package com.dayton.dolphin.test.util;
+package com.dayton.dolphin.util;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.*;

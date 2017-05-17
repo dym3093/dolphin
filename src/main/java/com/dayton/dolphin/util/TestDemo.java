@@ -1,4 +1,4 @@
-package com.dayton.dolphin.test.util;
+package com.dayton.dolphin.util;
 /**
  * Created by admin on 2016/11/28.
  */

@@ -1,4 +1,4 @@
-package com.dayton.dolphin.test.util;
+package com.dayton.dolphin.util;
 
 import java.io.BufferedReader;
 import java.io.File;

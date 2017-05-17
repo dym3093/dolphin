@@ -1,11 +1,9 @@
 package com.dayton.dolphin.listener;
 
-import com.dayton.dolphin.test.util.PropsUtils;
+import com.dayton.dolphin.util.PropsUtils;
 import oracle.jdbc.OracleConnection;
 import oracle.jdbc.OracleDriver;
-import oracle.jdbc.OracleStatement;
 import oracle.jdbc.dcn.DatabaseChangeRegistration;
-import org.apache.log4j.Logger;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

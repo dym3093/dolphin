@@ -2,7 +2,7 @@
  * @author DengYouming
  * @since 2016-7-29 下午12:12:42
  */
-package com.dayton.dolphin.test.util;
+package com.dayton.dolphin.util;
 
 import org.apache.log4j.Logger;
 import org.json.JSONException;

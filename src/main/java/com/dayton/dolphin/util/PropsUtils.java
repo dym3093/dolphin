@@ -1,11 +1,10 @@
-package com.dayton.dolphin.test.util;/**
+package com.dayton.dolphin.util;/**
  * Created by admin on 2016/12/20.
  */
 
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.*;
-import java.nio.charset.Charset;
 import java.util.List;
 import java.util.Properties;
 
