@@ -14,6 +14,7 @@ public enum Singleton {
 
     Singleton(){
         System.out.println(this.getClass().getSimpleName() + " created ...");
+        System.out.println("hashCode: "+this.hashCode());
     }
 
 }

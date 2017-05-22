@@ -3,7 +3,6 @@ package com.dayton.dolphin.util;
  * Created by daimian on 17-5-1.
  */
 
-import org.springframework.http.HttpStatus;
 
 /**
  * 状态枚举类示例
