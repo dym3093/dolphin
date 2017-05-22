@@ -12,7 +12,7 @@ import java.io.Serializable;
  * @author Damian
  * @create 2017-05-22 上午9:56
  **/
-public class Apple extends Fruit implements Serializable{
+public class Apple implements Fruit, Serializable {
 
     public Apple(){
         System.out.println(this.getClass().getSimpleName()+" created ...");

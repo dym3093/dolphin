@@ -4,11 +4,11 @@ package com.dayton.dolphin.designModel.comm.entity;/**
 
 
 /**
- * 食物
+ * 交通工具
  *
  * @author Damian
- * @create 2017-05-22 上午9:53
+ * @create 2017-05-22 下午3:09
  **/
-public interface Food {
+public interface Vehicle {
 
 }

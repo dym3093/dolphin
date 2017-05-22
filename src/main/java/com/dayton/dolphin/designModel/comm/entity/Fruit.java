@@ -8,5 +8,5 @@ package com.dayton.dolphin.designModel.comm.entity;/**
  * @author Damian
  * @create 2017-05-22 上午9:53
  **/
-public class Fruit {
+public interface Fruit {
 }

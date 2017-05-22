@@ -12,7 +12,7 @@ import java.io.Serializable;
  * @author Damian
  * @create 2017-05-22 上午10:12
  **/
-public class Banana extends Fruit implements Serializable{
+public class Banana implements Fruit, Serializable{
 
     public Banana(){
         System.out.println(this.getClass().getSimpleName()+" created ...");
