@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.concurrent.ForkJoinTask;
+
 /**
  * 日志
  *
@@ -19,6 +21,7 @@ public class LogAction {
     @RequestMapping("/show")
     @ResponseBody
     public void show(){
+        ForkJoinTask forkJoinTask = null;
         System.out.println("show");
         ModelAndView mav = new ModelAndView("Hello");
     }
