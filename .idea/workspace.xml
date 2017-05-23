@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa4de130-b643-4d58-ba5e-2a8c3dc44e03" name="Default" comment="1) template 模板模式&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/cor/ConcreateHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/cor/Handler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/cor/HelpRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/cor/MyRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/cor/PrintRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/cor/cor.txt" />
+    <list default="true" id="aa4de130-b643-4d58-ba5e-2a8c3dc44e03" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/memento/Memento.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/memento/Originator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/memento/memento.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="c0df8719-ec70-422c-87dd-51a260407a7e" name="ignore" comment="不上传的文件" />
@@ -37,79 +34,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cor.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/cor/cor.txt">
+      <file leaf-file-name="memento.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/memento/memento.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="1" column="25" lean-forward="true" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+            <state relative-caret-position="104">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Handler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/cor/Handler.java">
+      <file leaf-file-name="Memento.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/memento/Memento.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrintRequest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/cor/PrintRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="52">
+              <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
               <folding>
-                <element signature="e#168#169#0" expanded="true" />
-                <element signature="e#195#196#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#283#284#0" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#486#487#0" expanded="true" />
+                <element signature="e#515#516#0" expanded="true" />
+                <element signature="e#556#557#0" expanded="true" />
+                <element signature="e#592#593#0" expanded="true" />
+                <element signature="e#621#622#0" expanded="true" />
+                <element signature="e#648#649#0" expanded="true" />
+                <element signature="e#686#687#0" expanded="true" />
+                <element signature="e#718#719#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelpRequest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/cor/HelpRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding>
-                <element signature="e#166#167#0" expanded="true" />
-                <element signature="e#193#194#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConcreateHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/cor/ConcreateHandler.java">
+      <file leaf-file-name="Originator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/memento/Originator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
-                <element signature="e#215#216#0" expanded="true" />
-                <element signature="e#257#258#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyRequest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/cor/MyRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-              <folding>
-                <element signature="e#171#172#0" expanded="true" />
-                <element signature="e#203#204#0" expanded="true" />
-                <element signature="e#234#235#0" expanded="true" />
-                <element signature="e#261#262#0" expanded="true" />
-                <element signature="e#301#302#0" expanded="true" />
-                <element signature="e#333#334#0" expanded="true" />
-                <element signature="e#361#362#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
+                <element signature="e#293#294#0" expanded="true" />
+                <element signature="e#475#476#0" expanded="true" />
+                <element signature="e#504#505#0" expanded="true" />
+                <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
+                <element signature="e#610#611#0" expanded="true" />
+                <element signature="e#637#638#0" expanded="true" />
+                <element signature="e#675#676#0" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,9 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/bridge/Coffee.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/bridge/MediumCoffee.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/bridge/SuperSizeCoffee.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/bridge/MilkCoffeeImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/bridge/FragrantCoffeeImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/bridge/CoffeeImp.java" />
@@ -199,6 +168,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/cor/PrintRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/cor/HelpRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/cor/ConcreateHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/memento/memento.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/memento/Memento.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/memento/Originator.java" />
       </list>
     </option>
   </component>
@@ -514,7 +486,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cor" />
+              <option name="myItemId" value="memento" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1277,7 +1249,7 @@
       <workItem from="1495202104192" duration="3961000" />
       <workItem from="1495374688155" duration="8505000" />
       <workItem from="1495451685300" duration="7022000" />
-      <workItem from="1495501438670" duration="27408000" />
+      <workItem from="1495501438670" duration="28728000" />
     </task>
     <task id="LOCAL-00001" summary="修改spring-mvc.xml的文件名">
       <created>1493131645722</created>
@@ -1384,7 +1356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495547995388</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="chain of Responsibility(职责链)模式">
+      <created>1495550160975</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1495550160975</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1393,7 +1372,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="504551000" />
+    <option name="totallyTimeSpent" value="505871000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1538,7 +1517,8 @@
     <MESSAGE value="1) proxy 代理模式&#10;2) facade 外观模式" />
     <MESSAGE value="1) iterator 模式&#10;" />
     <MESSAGE value="1) template 模板模式&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="1) template 模板模式&#10;" />
+    <MESSAGE value="chain of Responsibility(职责链)模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="chain of Responsibility(职责链)模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1580,38 +1560,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/bridge/FragrantCoffeeImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-          <folding>
-            <element signature="e#232#233#0" expanded="false" />
-            <element signature="e#277#278#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/bridge/CoffeeImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/bridge/Coffee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding>
-            <element signature="e#282#283#0" expanded="false" />
-            <element signature="e#347#348#0" expanded="false" />
-            <element signature="e#386#387#0" expanded="false" />
-            <element signature="e#423#424#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/bridge/MilkCoffeeImp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -2011,12 +1959,12 @@
         <state relative-caret-position="338">
           <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
           <folding>
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="false" />
+            <element signature="e#478#479#0" expanded="false" />
+            <element signature="e#574#575#0" expanded="false" />
+            <element signature="e#611#612#0" expanded="false" />
+            <element signature="e#638#639#0" expanded="false" />
+            <element signature="e#675#676#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2086,8 +2034,8 @@
         <state relative-caret-position="260">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#168#169#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#168#169#0" expanded="false" />
+            <element signature="e#195#196#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2097,8 +2045,8 @@
         <state relative-caret-position="260">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="false" />
+            <element signature="e#193#194#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2119,6 +2067,53 @@
         <state relative-caret-position="26">
           <caret line="1" column="25" lean-forward="true" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/memento/memento.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/memento/Memento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/designModel/memento/Originator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
