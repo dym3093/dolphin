@@ -10,4 +10,16 @@ package com.dayton.dolphin.designModel.bridge;/**
  **/
 public abstract class Coffee {
 
+    CoffeeImp coffeeImp;
+
+    public abstract void pourCoffee();
+
+    public void setCoffeeImp(){
+        this.coffeeImp = CoffeeImpSingleton.getInstance();
+    }
+
+    public CoffeeImp getCoffeeImp() {
+        return this.coffeeImp;
+    }
+
 }

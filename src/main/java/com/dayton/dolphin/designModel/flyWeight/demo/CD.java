@@ -1,8 +1,7 @@
-package com.dayton.dolphin.designModel.flyWeight.demo;/**
+package com.dayton.dolphin.designModel.flyWeight.demo;
+/**
  * Created by daimian on 17-5-22.
  */
-
-import com.dayton.dolphin.designModel.flyWeight.IntrinsicState;
 
 /**
  * CD唱片
