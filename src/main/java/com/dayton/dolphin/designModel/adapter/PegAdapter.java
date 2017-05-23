@@ -24,12 +24,20 @@ public class PegAdapter implements ISquarePeg, IRoundPeg{
 
     @Override
     public void insertIntoHole(String msg) {
-        roundPeg.insertIntoHole(msg);
+        if (roundPeg!=null) {
+            roundPeg.insertIntoHole(msg);
+        }else {
+            System.out.println("No RoundPeg Instance");
+        }
     }
 
     @Override
     public void insert(String msg) {
-        squarePeg.insert(msg);
+        if (squarePeg!=null) {
+            squarePeg.insert(msg);
+        } else {
+            System.out.println("No SquarePeg Instance");
+        }
     }
 
     public MySquarePeg getSquarePeg() {
@@ -47,4 +55,5 @@ public class PegAdapter implements ISquarePeg, IRoundPeg{
     public void setRoundPeg(MyRoundPeg roundPeg) {
         this.roundPeg = roundPeg;
     }
+
 }
