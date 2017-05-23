@@ -3,7 +3,7 @@ package com.dayton.dolphin.designModel.singleton;/**
  */
 
 /**
- * 单例
+ * Enum模式的单例
  *
  * @author Damian
  * @create 2017-05-22 下午1:27

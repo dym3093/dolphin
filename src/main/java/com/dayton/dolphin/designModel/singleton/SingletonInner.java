@@ -3,7 +3,7 @@ package com.dayton.dolphin.designModel.singleton;/**
  */
 
 /**
- * 静态内部类写法
+ * 静态内部类写法(常用)
  *
  * @author Damian
  * @create 2017-05-22 下午2:44
