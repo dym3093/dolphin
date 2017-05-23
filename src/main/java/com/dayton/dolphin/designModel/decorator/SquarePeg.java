@@ -10,4 +10,8 @@ public class SquarePeg implements Work{
         System.out.println("方型桩插入！");
     }
 
+    public void insert(String str){
+        System.out.println(this.getClass().getSimpleName()+" insert() " + str);
+    }
+
 }

@@ -1,0 +1,19 @@
+设计模式之Adapter(适配器)
+适配器模式定义:
+将两个不兼容的类纠合在一起使用,属于结构型模式,需要有 Adaptee(被适配者)和
+Adaptor(适配器)两个身份.
+为何使用?
+我们经常碰到要将两个没有关系的类组合在一起使用,第一解决方案是:修改各自类的接
+口,但是如果我们没有源代码,或者,我们不愿意为了一个应用而修改各自的接口。 怎么
+办?
+使用 Adapter,在这两种接口之间创建一个混合接口(混血儿).
+如何使用?
+实现 Adapter 方式,其实"think in Java"的"类再生"一节中已经提到,有两种方式:
+组合(composition)和继承(inheritance).
+RoundPeg 属于 Adaptee,是被适配者.PegAdapter 是 Adapter,将
+Adaptee(被适配者 RoundPeg)和 Target(目标 SquarePeg)进行适配.实际上这是将组
+合方法(composition)和继承(inheritance)方法综合运用.
+PegAdapter 首先继承 SquarePeg,然后使用 new 的组合生成对象方式,生成 RoundPeg
+的对象 roundPeg,再重载父类 insert()方法。从这里,你也了解使用 new 生成对象和使
+用 extends 继承生成对象的不同,前者无需对原来的类修改,甚至无需要知道其内部结构
+和源代码.
