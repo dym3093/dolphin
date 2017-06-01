@@ -6,33 +6,28 @@ package com.dayton.dolphin.threadAction.immutableObject;
  */
 public final class Location {
 
-    private double x;
-    private double y;
+    private final double x;
+    private final double y;
 
     public Location(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    public void setXY(double x, double y){
-        this.setX(x);
-        this.setY(y);
-    }
-
     public double getX() {
-        return x;
-    }
-
-    public void setX(double x) {
-        this.x = x;
+        return new Double(x);
     }
 
     public double getY() {
-        return y;
+        return new Double(y);
     }
 
-    public void setY(double y) {
-        this.y = y;
+    @Override
+    public String toString() {
+        return "Location{" +
+                "x=" + getX() +
+                ", y=" + getY() +
+                '}';
     }
 
 }
