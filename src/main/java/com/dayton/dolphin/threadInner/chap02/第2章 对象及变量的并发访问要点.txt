@@ -58,6 +58,18 @@ synchronized(非this对象) 的好处：
     但如果使用 synchronized(非this对象) ，代码块中的程序与同步方法是异步的，不与其他
     synchronized(this) 争抢 this 锁，可以大大提高效率
 
+[注意]
+使用synchronized(非this对象)进行操作时，对象监视器必须是同一个对象，如果不是同一个对象，就无法
+实现同步。
+
+synchronized(非this对象)总结：
+    1）当多个线程同时执行synchronized(x){}同步代码块时呈现同步效果;
+    2）当其他线程执行x对象中的synchronized方法时呈现同步效果;
+    3）当其他线程执行x对象中的synchronized同步代码块时呈现同步效果;
+    但其他线程调用不加synchronized关键字的方法时，还是异步调用
+
+
+
 
 
 

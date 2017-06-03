@@ -7,7 +7,8 @@ public class DemoPart02 {
 
     public static void main(String[] args){
 //        testMyTask();
-        testMyService();
+//        testMyService();
+        testMyList();
     }
 
 
@@ -39,4 +40,13 @@ public class DemoPart02 {
         one.start();
     }
 
+    public static void testMyList(){
+        MyList myList = new MyList();
+        MyListThreadCar car = new MyListThreadCar(myList);
+        car.setName("car");
+        MyListThreadTrain train = new MyListThreadTrain(myList);
+        train.setName("train");
+        car.start();
+        train.start();
+    }
 }
