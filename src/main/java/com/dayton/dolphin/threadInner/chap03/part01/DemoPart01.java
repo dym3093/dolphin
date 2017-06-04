@@ -14,7 +14,8 @@ public class DemoPart01 {
 //        demo.testBusManager();
 //        demo.testService();
 //        demo.testServiceTwo();
-        demo.testProduceAndConsume();
+//        demo.testProduceAndConsume();
+        demo.testPAndCTwo();
     }
     public void test1(){
         try {
@@ -98,6 +99,26 @@ public class DemoPart01 {
         ConsumeThread consumeThread = new ConsumeThread(consumer);
         consumeThread.setName("consumer");
         consumeThread.start();
+
+    }
+
+    public void testPAndCTwo(){
+        String lock = new String("lock");
+
+        Producer producer = new Producer(lock);
+        Consumer consumer = new Consumer(lock);
+
+        ProduceThread[] pThreads = new ProduceThread[2];
+        ConsumeThread[] cThreads = new ConsumeThread[2];
+
+        for (int i=0; i<2; i++){
+            pThreads[i] = new ProduceThread(producer);
+            pThreads[i].setName("生产者["+(i+1)+"]");
+            cThreads[i] = new ConsumeThread(consumer);
+            cThreads[i].setName("消费者["+(i+1)+"]");
+            pThreads[i].start();
+            cThreads[i].start();
+        }
 
     }
 }
