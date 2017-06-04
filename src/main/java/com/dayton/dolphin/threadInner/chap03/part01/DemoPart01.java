@@ -13,9 +13,9 @@ public class DemoPart01 {
 //        demo.testWaitBus();
 //        demo.testBusManager();
 //        demo.testService();
-        demo.testServiceTwo();
+//        demo.testServiceTwo();
+        demo.testProduceAndConsume();
     }
-
     public void test1(){
         try {
             String str = new String();
@@ -83,6 +83,21 @@ public class DemoPart01 {
         NotifyThreadOther notifyThreadOther = new NotifyThreadOther(lock);
         notifyThreadOther.setName("D");
         notifyThreadOther.start();
+
+    }
+
+    public void testProduceAndConsume(){
+        String lock = new String("lock");
+
+        Producer producer = new Producer(lock);
+        ProduceThread produceThread = new ProduceThread(producer);
+        produceThread.setName("producer");
+        produceThread.start();
+
+        Consumer consumer = new Consumer(lock);
+        ConsumeThread consumeThread = new ConsumeThread(consumer);
+        consumeThread.setName("consumer");
+        consumeThread.start();
 
     }
 }
