@@ -6,13 +6,14 @@ package com.dayton.dolphin.threadInner.chap02.part02;
 public class DemoPart02 {
 
     public static void main(String[] args){
-//        testMyTask();
-//        testMyService();
-        testMyList();
+        DemoPart02 demo = new DemoPart02();
+//        demo.testMyTask();
+//        demo.testMyService();
+//        demo.testMyList();
     }
 
 
-    public static void testMyTask(){
+    public  void testMyTask(){
         try {
             MyTask myTask = new MyTask();
             WashThreadOne one = new WashThreadOne(myTask);
@@ -30,7 +31,7 @@ public class DemoPart02 {
         }
     }
 
-    public static void testMyService(){
+    public  void testMyService(){
         MyService myService = new MyService();
         MyServiceThread doom = new MyServiceThread(myService);
         doom.setName("Crazy");
@@ -40,7 +41,7 @@ public class DemoPart02 {
         one.start();
     }
 
-    public static void testMyList(){
+    public  void testMyList(){
         MyList myList = new MyList();
         MyListThreadCar car = new MyListThreadCar(myList);
         car.setName("car");
