@@ -1,6 +1,9 @@
 package com.dayton.dolphin.threadInner.chap03.part01;
 
 
+import java.io.IOException;
+import java.io.PipedInputStream;
+import java.io.PipedOutputStream;
 
 /**
  * Created by bruce on 17-6-4.
@@ -18,7 +21,9 @@ public class DemoPart01 {
 //        demo.testPAndCTwo();
 //        demo.testStackService();
 //        demo.testStackServiceOther();
-        demo.testManyProducerToOneConsumer();
+//        demo.testManyProducerToOneConsumer();
+//        demo.testPipedData();
+        demo.testDBTools();
     }
     public void test1(){
         try {
@@ -272,5 +277,45 @@ public class DemoPart01 {
         consumeServiceThread_02.start();
         consumeServiceThread_03.start();
         consumeServiceThread_04.start();
+    }
+
+    /**
+     * 管道命令读写数据
+     */
+    public void testPipedData(){
+        try {
+            WriteData writeData = new WriteData();
+            PipedOutputStream outputStream = new PipedOutputStream();
+            WriteThread writeThread = new WriteThread(writeData, outputStream);
+            writeThread.setName(" write ");
+
+            ReadData readData = new ReadData();
+            PipedInputStream inputStream = new PipedInputStream();
+            ReadThread readThread = new ReadThread(readData, inputStream);
+            readThread.setName(" read ");
+
+            outputStream.connect(inputStream);
+
+            readThread.start();
+            Thread.sleep(2000);
+
+            writeThread.start();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void testDBTools(){
+        DBTools tools = new DBTools();
+        for (int i=0; i<20; i++) {
+            BackupAThread aThread = new BackupAThread(tools);
+            BackupBThread bThread = new BackupBThread(tools);
+            aThread.start();
+            bThread.start();
+        }
+
     }
 }

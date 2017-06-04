@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa4de130-b643-4d58-ba5e-2a8c3dc44e03" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/MyStack.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/StackConsumeService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/StackConsumeServiceThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/StackProduceService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/StackProduceServiceThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/BackupAThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/BackupBThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/DBTools.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/ReadData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/ReadThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/WriteData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/WriteThread.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/DemoPart01.java" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/DemoPart01.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/第3章 线程间通信.txt" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/第3章 线程间通信.txt" />
     </list>
     <list id="c0df8719-ec70-422c-87dd-51a260407a7e" name="ignore" comment="不上传的文件" />
     <ignored path="dolphin.iws" />
@@ -40,95 +43,61 @@
       <file leaf-file-name="第3章 线程间通信.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/第3章 线程间通信.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+            <state relative-caret-position="234">
+              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProduceThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/ProduceThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-              <folding>
-                <element signature="e#224#225#0" expanded="true" />
-                <element signature="e#264#265#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Producer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/Producer.java">
+      <file leaf-file-name="DBTools.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/DBTools.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
-              <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+              <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Consumer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/Consumer.java">
+      <file leaf-file-name="BackupAThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/BackupAThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+            <state relative-caret-position="280">
+              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding>
-                <element signature="e#178#179#0" expanded="true" />
-                <element signature="e#210#211#0" expanded="true" />
+                <element signature="e#206#207#0" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
+                <element signature="e#310#311#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyStack.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/MyStack.java">
+      <file leaf-file-name="BackupBThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/BackupBThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state relative-caret-position="280">
+              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+              <folding>
+                <element signature="e#206#207#0" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
+                <element signature="e#310#311#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DemoPart01.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/DemoPart01.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StackProduceService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/StackProduceService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-              <folding>
-                <element signature="e#212#213#0" expanded="true" />
-                <element signature="e#246#247#0" expanded="true" />
-                <element signature="e#278#279#0" expanded="true" />
-                <element signature="e#306#307#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StackConsumeServiceThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/StackConsumeServiceThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-              <folding>
-                <element signature="e#258#259#0" expanded="true" />
-                <element signature="e#296#297#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DemoPart01.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/DemoPart01.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="239" column="33" lean-forward="true" selection-start-line="239" selection-start-column="33" selection-end-line="239" selection-end-column="33" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -168,13 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part01/CommVar.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part01/ReentryService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part01/ThreadService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part01/ThreadMainOther.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part01/ThreadMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part01/ObjectLockDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part01/SonClazz.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part01/FatherClazz.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part02/CommUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part02/WashThread.java" />
@@ -207,7 +169,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/TestMethodThreadB.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/TestMethodThreadC.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/NotifyThreadOther.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/第3章 线程间通信.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/ValueObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/ProduceThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/ConsumeThread.java" />
@@ -218,6 +179,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/StackProduceServiceThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/StackConsumeServiceThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/MyStack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/第3章 线程间通信.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/WriteThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/ReadThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/WriteData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/ReadData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/DBTools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/BackupAThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/BackupBThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/DemoPart01.java" />
       </list>
     </option>
@@ -1313,7 +1282,7 @@
       <workItem from="1496293410836" duration="17466000" />
       <workItem from="1496391691185" duration="5764000" />
       <workItem from="1496450061632" duration="28776000" />
-      <workItem from="1496536361974" duration="29776000" />
+      <workItem from="1496536361974" duration="33181000" />
     </task>
     <task id="LOCAL-00001" summary="修改spring-mvc.xml的文件名">
       <created>1493131645722</created>
@@ -1518,7 +1487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496577759733</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="《Java多线程并发编程核心技术》第3章 线程通信_02&#10;1) wait/notify实现典型的生产者/消费者模型_03">
+      <created>1496581349258</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1496581349258</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1554,7 +1530,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="600487000" />
+    <option name="totallyTimeSpent" value="603892000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1567,7 +1543,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="741" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1590,10 +1566,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31260505" sideWeight="0.49358973" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34453782" sideWeight="0.49563146" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34453782" sideWeight="0.49563146" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31240544" sideWeight="0.38487396" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31240544" sideWeight="0.38487396" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30777717" sideWeight="0.5561139" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2818533" sideWeight="0.55709714" order="9" side_tool="true" content_ui="tabs" />
@@ -1638,7 +1614,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31260505" sideWeight="0.49358973" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34453782" sideWeight="0.49563146" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34453782" sideWeight="0.49563146" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.50877196" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
@@ -1684,7 +1660,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1）取钱线程类测试" />
     <MESSAGE value="ReentrantLock测试" />
     <MESSAGE value="ReentrantLock和condition实现线程通信" />
     <MESSAGE value="优化银行账号的测试，BlockingQueue阻塞测试" />
@@ -1709,7 +1684,8 @@
     <MESSAGE value="《Java多线程并发编程核心技术》第3章 线程通信_01" />
     <MESSAGE value="《Java多线程并发编程核心技术》第3章 线程通信_02&#10;1) wait/notify实现典型的生产者/消费者模型" />
     <MESSAGE value="《Java多线程并发编程核心技术》第3章 线程通信_02&#10;1) wait/notify实现典型的生产者/消费者模型_02" />
-    <option name="LAST_COMMIT_MESSAGE" value="《Java多线程并发编程核心技术》第3章 线程通信_02&#10;1) wait/notify实现典型的生产者/消费者模型_02" />
+    <MESSAGE value="《Java多线程并发编程核心技术》第3章 线程通信_02&#10;1) wait/notify实现典型的生产者/消费者模型_03" />
+    <option name="LAST_COMMIT_MESSAGE" value="《Java多线程并发编程核心技术》第3章 线程通信_02&#10;1) wait/notify实现典型的生产者/消费者模型_03" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1757,56 +1733,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part01/ThreadService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part01/ThreadMainOther.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part01/ThreadMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part01/SonClazz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part01/FatherClazz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part01/ObjectLockDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="42" column="41" lean-forward="true" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part02/CommUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/part02/MyTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -2161,14 +2087,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/第3章 线程间通信.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/Producer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -2246,10 +2164,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/ReadThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/WriteThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding>
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/WriteData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/ReadData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/第3章 线程间通信.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/BackupBThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#310#311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/DemoPart01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="239" column="33" lean-forward="true" selection-start-line="239" selection-start-column="33" selection-end-line="239" selection-end-column="33" />
+        <state relative-caret-position="104">
+          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/BackupAThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#310#311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/DBTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
           <folding />
         </state>
       </provider>
