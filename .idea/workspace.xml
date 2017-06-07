@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa4de130-b643-4d58-ba5e-2a8c3dc44e03" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/Chap04Part01Demo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/Chap04Service.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/MyService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/ServiceThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/ThreadA.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/ThreadB.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/第4章 Lock的使用.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/FairLockService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/PrintService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/PrintSquarThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/PrintStarThread.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/Chap04Part01Demo.java" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/Chap04Part01Demo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/第4章 Lock的使用.txt" afterPath="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/第4章 Lock的使用.txt" />
     </list>
     <list id="c0df8719-ec70-422c-87dd-51a260407a7e" name="ignore" comment="不上传的文件" />
     <ignored path="dolphin.iws" />
@@ -41,60 +40,56 @@
       <file leaf-file-name="第4章 Lock的使用.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/第4章 Lock的使用.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="411">
+              <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chap04Part01Demo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Chap04Part01Demo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/Chap04Part01Demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            <state relative-caret-position="52">
+              <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreadB.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/ThreadB.java">
+      <file leaf-file-name="FairLockService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/FairLockService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="156">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
-                <element signature="e#202#203#0" expanded="true" />
-                <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#279#280#0" expanded="true" />
-                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#296#297#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/MyService.java">
+      <file leaf-file-name="PrintStarThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/PrintStarThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+            <state relative-caret-position="182">
+              <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#224#225#0" expanded="true" />
+                <element signature="e#262#263#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreadA.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/ThreadA.java">
+      <file leaf-file-name="PrintSquarThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/PrintSquarThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="312">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
-                <element signature="e#202#203#0" expanded="true" />
-                <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#279#280#0" expanded="true" />
-                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#264#265#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,10 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap02/第2章 对象及变量的并发访问要点.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/WaiBus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/WaitBus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/BusInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/PassengerList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/BusDepot.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/BusManager.java" />
@@ -181,11 +172,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/ThreadService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/ServiceThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/Chap04Service.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/第4章 Lock的使用.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/MyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/ThreadB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/Chap04Part01Demo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/ThreadA.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/PrintSquarThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/PrintStarThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/PrintService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/FairLockService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/第4章 Lock的使用.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/Chap04Part01Demo.java" />
       </list>
     </option>
   </component>
@@ -1404,7 +1399,7 @@
       <workItem from="1496638960351" duration="3106000" />
       <workItem from="1496717534313" duration="1195000" />
       <workItem from="1496744540414" duration="8157000" />
-      <workItem from="1496811206490" duration="10993000" />
+      <workItem from="1496811206490" duration="15477000" />
     </task>
     <task id="LOCAL-00001" summary="修改spring-mvc.xml的文件名">
       <created>1493131645722</created>
@@ -1637,7 +1632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496824586136</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="《Java多线程并发编程核心技术》第4章 ReentrantLock实现线程通信">
+      <created>1496840344656</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1496840344656</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1673,7 +1675,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="628069000" />
+    <option name="totallyTimeSpent" value="632553000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1686,7 +1688,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="741" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1712,7 +1714,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34453782" sideWeight="0.49563146" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30030257" sideWeight="0.37478992" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30030257" sideWeight="0.37478992" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30777717" sideWeight="0.5561139" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2818533" sideWeight="0.55709714" order="9" side_tool="true" content_ui="tabs" />
@@ -1803,7 +1805,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bridge模式" />
     <MESSAGE value="decorator修饰模式" />
     <MESSAGE value="1)composite 组合模式&#10;2)给其他模式添加txt文档" />
     <MESSAGE value="1) adapter 适配器模式&#10;2）添加一些修改" />
@@ -1828,7 +1829,8 @@
     <MESSAGE value="《Java多线程并发编程核心技术》第3章 线程通信_04" />
     <MESSAGE value="《Java多线程并发编程核心技术》第3章 join方法的使用" />
     <MESSAGE value="《Java多线程并发编程核心技术》第3章 ThreadLocal 的验证" />
-    <option name="LAST_COMMIT_MESSAGE" value="《Java多线程并发编程核心技术》第3章 ThreadLocal 的验证" />
+    <MESSAGE value="《Java多线程并发编程核心技术》第4章 ReentrantLock实现线程通信" />
+    <option name="LAST_COMMIT_MESSAGE" value="《Java多线程并发编程核心技术》第4章 ReentrantLock实现线程通信" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1876,28 +1878,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/NotifyThreadOther.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/ValueObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/ConsumeThread.kt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/ConsumeThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap03/part01/ProduceThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -2272,27 +2252,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/sofeware/jdk1.8.0/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="165" column="0" lean-forward="true" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
-          <folding>
-            <element signature="e#5562#5563#0" expanded="false" />
-            <element signature="e#5614#5615#0" expanded="false" />
-            <element signature="e#17535#17536#0" expanded="false" />
-            <element signature="e#17577#17578#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/第4章 Lock的使用.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/ThreadB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -2329,11 +2288,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/PrintSquarThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/sofeware/jdk1.8.0/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="108" column="23" lean-forward="false" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
+          <folding>
+            <element signature="e#8176#8177#0" expanded="true" />
+            <element signature="e#8216#8217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/PrintService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="13" column="43" lean-forward="false" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/PrintStarThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/第4章 Lock的使用.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/Chap04Part01Demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        <state relative-caret-position="52">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dayton/dolphin/threadInner/chap04/part01/FairLockService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#296#297#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
