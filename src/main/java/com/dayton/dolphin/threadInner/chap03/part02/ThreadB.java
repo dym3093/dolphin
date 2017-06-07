@@ -8,12 +8,13 @@ public class ThreadB extends Thread{
     @Override
     public void run() {
         try {
-            ThreadA a = new ThreadA();
-            a.start();
-            a.join();
-            System.out.println("线程B在 run end 处打印了！ ");
+            for (int i=0; i<100; i++){
+                TestTools.local.set("ThreadB["+(i+1)+"]");
+                System.out.println("ThreadB get Value = "
+                        + TestTools.local.get() );
+                Thread.sleep(200);
+            }
         } catch (InterruptedException e) {
-            System.out.println("线程B在 run catch 处打印了！ ");
             e.printStackTrace();
         }
     }

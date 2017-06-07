@@ -66,6 +66,10 @@ JDK 中4个类实现线程间通信：
 1) PipedInputStream 和 PipedOutputStream
 2) PipedReader 和 PipedWriter
 
+5. ThreadLocal 的使用
+ThreadLocal 解决的是变量在不同线程之间的隔离性。
+
+
 
 
 

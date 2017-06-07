@@ -7,9 +7,15 @@ public class ThreadA extends Thread{
 
     @Override
     public void run() {
-        for (int i=0; i<Integer.MAX_VALUE; i++){
-            String str = new String();
-            Math.random();
+        try {
+            for (int i=0; i<100; i++){
+                TestTools.local.set("ThreadA["+(i+1)+"]");
+                System.out.println("ThreadA get Value = "
+                        + TestTools.local.get() );
+                Thread.sleep(200);
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 }
