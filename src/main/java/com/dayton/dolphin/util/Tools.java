@@ -2,17 +2,13 @@ package com.dayton.dolphin.util;/**
  * Created by admin on 2016/12/16.
  */
 
-import com.dayton.dolphin.test.entity.ErpPreCustomer;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
 import java.lang.reflect.Field;
 import java.lang.reflect.Type;
 import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * 工具类
@@ -23,6 +19,20 @@ import java.util.List;
 public class Tools {
 
     private Class<?> clazz;
+
+    private static final Random RANDOM_DEFAULT = new Random();
+    //默认的随机字符长度
+    private static final int RANDOM_NUM_LENGTH_DEFAULT = 6;
+
+    private Tools(){}
+
+    private static class ToolsHolder{
+        private static final Tools INSTANCE = new Tools();
+    }
+
+    public static Tools getInstance(){
+        return ToolsHolder.INSTANCE;
+    }
 
     public static void main(String[] args) throws ParseException {
         //String tip = PropsUtils.getString("status","tip");
@@ -45,6 +55,7 @@ public class Tools {
 //        String typeClassStr2 = findTypeTest2(ErpPreCustomer.class, ErpPreCustomer.F_CREATETIME);
 //        System.out.println("typeClassStr2: "+typeClassStr2);
 
+        int num = Tools.randInt(8);
     }
 
     public static void testProp1(){
@@ -222,6 +233,19 @@ public class Tools {
 
     public static String findTypeTest2(Class<?> clazz, String fieldName){
         return findField(clazz,fieldName).getGenericType().toString();
+    }
+
+    public static int randInt(Integer length){
+        int num = 0;
+        if ("".equals(length) || length==null || length==0){
+            length = RANDOM_NUM_LENGTH_DEFAULT;
+        }
+        double tmpDouble = ( 1 + RANDOM_DEFAULT.nextDouble() ) * Math.pow(10, length);
+        String fixStr = String.valueOf(tmpDouble);
+        System.out.println("random double: " + tmpDouble);
+        String tmpFix = fixStr.substring(1, length+1);
+        System.out.println("random tmpFix: " + tmpFix);
+        return num;
     }
 
 }
