@@ -1,0 +1,27 @@
+
+1. ReentrantLock 可重入锁
+eg: ReentrantLock 的应用
+
+public class MyResource(){
+    private ReentrantLock lock = new ReentrantLock();
+    public void show(){
+        try {
+            lock.lock();
+            // other code
+            ...
+        } finally {
+           lock.unlock();
+        }
+    }
+}
+
+2. Object / Condition 中的线程通信方法等价
+
+    Object                      Condition
+
+    wait()                      await()
+    wait(long timeOut)          await(long time, TimeUnit unit)
+    notify()                    signal()
+    notifyAll()                 signalAll()
+
+
