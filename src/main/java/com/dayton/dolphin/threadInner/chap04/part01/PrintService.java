@@ -19,6 +19,7 @@ public class PrintService{
         try {
             lock.lock();
             while (flag){
+                System.out.println("有可能连续星号...");
                 condition.await();
             }
             System.out.println("**********");
@@ -35,6 +36,7 @@ public class PrintService{
          try {
             lock.lock();
             while (!flag){
+                System.out.println("有可能连续井号...");
                 condition.await();
             }
             System.out.println("##########");
